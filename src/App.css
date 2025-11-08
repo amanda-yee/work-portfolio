@@ -1,10 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Silkscreen:wght@400;700&display=swap');
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  /* text-align: center; */
+  font-family: 'DotGothic16', monospace;
 }
 
+.home {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0B17B4;
+  color: #FFFFFF;
+} 
+
+.intro-text {
+  font-size: 1.5rem;
+}
+
+.intro-text h1 {
+  font-family: 'Silkscreen', 'DotGothic16', monospace;
+}
+
+#open-about {
+  color: #ffffff !important;
+  background-color: brown !important;
+}
+
+.about-window {
+  position: fixed;
+  top: 30%;
+  left: 40%;
+  opacity: 0;
+  z-index: -1;
+}
+
+/* bring to front on open */
+.about-window.open {
+  opacity: 1;
+  z-index: 999; 
+}
+
+
+/* 
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -31,12 +73,4 @@
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+} */
