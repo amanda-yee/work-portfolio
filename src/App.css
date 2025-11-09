@@ -26,25 +26,6 @@
   font-family: 'Silkscreen', 'DotGothic16', monospace;
 }
 
-#open-about {
-  color: #ffffff !important;
-  background-color: brown !important;
-}
-
-.about-window {
-  position: fixed;
-  top: 30%;
-  left: 40%;
-  opacity: 0;
-  z-index: -1;
-}
-
-/* bring to front on open */
-.about-window.open {
-  opacity: 1;
-  z-index: 999; 
-}
-
 
 /* 
 .logo {
