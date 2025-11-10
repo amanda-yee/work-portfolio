@@ -8,6 +8,7 @@
   font-family: 'DotGothic16', monospace;
 }
 
+
 .home {
   text-align: center;
   min-height: 100vh;
@@ -41,12 +42,31 @@
   opacity: 70%;
 }
 
+.window-bar {
+  display: flex;
+  justify-content: end;
+  background-color: #CCCCCC;
+  border: 1px solid black;
+  margin-bottom: 1rem;
+}
+
+.window-content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .film-photo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 1rem;
 }
+
+.close:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
 
 /* 
 .logo {

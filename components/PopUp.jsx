@@ -3,13 +3,14 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
 import Typography from '@mui/material/Typography';
-
+import CloseIcon from '@mui/icons-material/Close';
 import About from './About';
 import ProjectHealthTracker from './ProjectHealthTracker';
 import ProjectInsideEdit from './ProjectInsideEdit';
 import Film from './Film';
 
 import imageSrc from '../assets/folder.png';
+
 
 const style = {
   //positioning modal in center of screen
@@ -22,10 +23,9 @@ const style = {
   overflowY: 'auto', // add scrollbar if content exceeds maxHeight
   color: '#000000',
   bgcolor: 'background.paper',
-  border: '2px solid #000',
-  boxShadow: 24,
-  px: 4,
-  pb: 4
+  border: '2px solid #000000',
+  // boxShadow: 24,
+  pb: '1rem'
 };
 
 export default function PopUp(props) {
@@ -53,16 +53,26 @@ export default function PopUp(props) {
       >
 
         <Box sx={style}>
-          <Button onClick={handleClose}>
-            X
-          </Button>
+          <Box className="window-bar" onClick={handleClose}>
+            <CloseIcon className='close'/>
+          </Box>
 
           {/* render content in popup based on name */}
-          {props.name === "about" ? <About /> : null}
-          {props.name === "project_health_tracker" ? <ProjectHealthTracker /> : null}
-          {props.name === "project_interior_design" ? <ProjectInsideEdit /> : null}
-          {props.name === "film_photos" ? <Film /> : null}
+          <div className="window-content"> 
+            {props.name === "about" ? <About /> : null}
+          </div>
 
+          <div className="window-content"> 
+            {props.name === "project_health_tracker" ? <ProjectHealthTracker /> : null}
+          </div>
+
+          <div className="window-content"> 
+            {props.name === "project_interior_design" ? <ProjectInsideEdit /> : null}
+          </div>
+
+          <div className="window-content"> 
+            {props.name === "film_photos" ? <Film /> : null}
+          </div>
         </Box>
       </Modal>
     </div>
