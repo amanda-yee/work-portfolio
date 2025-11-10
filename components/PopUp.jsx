@@ -18,14 +18,14 @@ const style = {
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: '50%',
+  maxHeight: '70vh',
+  overflowY: 'auto', // add scrollbar if content exceeds maxHeight
   color: '#000000',
   bgcolor: 'background.paper',
   border: '2px solid #000',
   boxShadow: 24,
   px: 4,
   pb: 4
-
-  
 };
 
 export default function PopUp(props) {
@@ -61,7 +61,7 @@ export default function PopUp(props) {
           {props.name === "about" ? <About /> : null}
           {props.name === "project_health_tracker" ? <ProjectHealthTracker /> : null}
           {props.name === "project_interior_design" ? <ProjectInsideEdit /> : null}
-          {props.name === "film" ? <Film /> : null}
+          {props.name === "film_photos" ? <Film /> : null}
 
         </Box>
       </Modal>
