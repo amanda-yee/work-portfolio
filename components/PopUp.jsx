@@ -9,7 +9,7 @@ import ProjectHealthTracker from './ProjectHealthTracker';
 import ProjectInsideEdit from './ProjectInsideEdit';
 import Film from './Film';
 
-import folderPath from '../assets/folder.png';
+import imageSrc from '../assets/folder.png';
 
 const style = {
   //positioning modal in center of screen
@@ -37,7 +37,7 @@ export default function PopUp(props) {
     <div className="popup">
       <Typography onClick={handleOpen}>
         <img className="folder-icon"
-        src={folderPath}
+        src={imageSrc}
         alt="Folder icon"
         width="50"
         />

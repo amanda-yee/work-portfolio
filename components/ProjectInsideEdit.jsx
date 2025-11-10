@@ -1,4 +1,5 @@
 import { Typography } from "@mui/material"
+import videoSrc from '../assets/inside_edit_video.mp4';
 
 const ProjectInsideEdit = () => {
 
@@ -12,7 +13,7 @@ const ProjectInsideEdit = () => {
             </Typography>
 
             <video width="100%" autoPlay muted>
-                <source src="./assets/inside_edit_video.mp4" type="video/mp4" />
+                <source src={videoSrc} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
         </div>
