@@ -1,5 +1,5 @@
 import Typography from '@mui/material/Typography';
-
+import EmailIcon from '@mui/icons-material/Email';
 const About = () => {
 
     return (
@@ -11,7 +11,7 @@ const About = () => {
             Hi! I'm a Software Engineer based in Brooklyn, with a background in data science. <br></br>
             I am currently gaining experience through volunteer work and am open to full-time opportunities. <br></br><br></br>
 
-            Contact me: <a href="mailto:amandakyee@gmail.com">amandakyee@gmail.com</a>
+            <EmailIcon /> Contact me: <a href="mailto:amandakyee@gmail.com">amandakyee@gmail.com</a>
           </Typography>
 
         </>

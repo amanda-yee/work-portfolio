@@ -18,14 +18,39 @@
   color: #FFFFFF;
 } 
 
+.home-content {
+  flex-grow: 1;
+  position: relative; /* allows absolute positioning of children */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
 .intro-text {
   font-size: 1.5rem;
+  z-index: 10;
+  /* text-align: center; */
 }
 
 .intro-text h1 {
   font-family: 'Silkscreen', 'DotGothic16', monospace;
 }
 
+.folder-icon:hover {
+  cursor: pointer;
+  opacity: 70%;
+}
+
+/* .popup {
+  position: fixed;
+} */
+
+/* .folder-about {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+} */
 
 /* 
 .logo {

@@ -1,11 +1,16 @@
-import * as React from 'react';
+import { useState } from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
+import Typography from '@mui/material/Typography';
+
 import About from './About';
 import ProjectHealthTracker from './ProjectHealthTracker';
+import ProjectInsideEdit from './ProjectInsideEdit';
+import Film from './Film';
 
 const style = {
+  //positioning modal in center of screen
   position: 'absolute',
   top: '50%',
   left: '50%',
@@ -15,34 +20,47 @@ const style = {
   bgcolor: 'background.paper',
   border: '2px solid #000',
   boxShadow: 24,
-  p: 4,
+  px: 4,
+  pb: 4
+
+  
 };
 
 export default function PopUp(props) {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
   return (
-    <div>
-      <Button onClick={handleOpen}>
-        <img 
+    <div className="popup">
+      <Typography onClick={handleOpen}>
+        <img className="folder-icon"
         src="./assets/folder.png"
         alt="Folder icon"
+        width="50"
         />
-      </Button>
+      </Typography>
 
       <p>{props.name}</p>
 
       <Modal
-        open={open}
-        onClose={handleClose}
+        open={open} // this determines whether modal is open or closed
+        // onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
+
         <Box sx={style}>
+          <Button onClick={handleClose}>
+            X
+          </Button>
+
+          {/* render content in popup based on name */}
           {props.name === "about" ? <About /> : null}
           {props.name === "project_health_tracker" ? <ProjectHealthTracker /> : null}
+          {props.name === "project_interior_design" ? <ProjectInsideEdit /> : null}
+          {props.name === "film" ? <Film /> : null}
+
         </Box>
       </Modal>
     </div>

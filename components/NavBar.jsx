@@ -2,14 +2,23 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import EmailIcon from '@mui/icons-material/Email';
 
 export default function NavBar() {
 
   const dateNow = new Date();
   const timeNow = dateNow.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', hour12: false}); 
 
+  const boxStyle = {
+    borderTop: '1px solid #333333',
+    borderRight: '1px solid #333333',
+    borderBottom: '1px solid #FFFFFF',
+    borderLeft: '1px solid #FFFFFF',
+    padding: '2px 8px',
+  }
+
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ position: 'fixed', top: 0, width: '100%', zIndex: 1 }}>
       <AppBar 
         position="static" 
         sx={{
@@ -29,11 +38,7 @@ export default function NavBar() {
           <Typography 
             // variant="h8" component="div" 
             sx={{ 
-              borderTop: '1px solid #333333',
-              borderRight: '1px solid #333333',
-              borderBottom: '1px solid #FFFFFF',
-              borderLeft: '1px solid #FFFFFF',
-              padding: '5px 10px',
+              ...boxStyle,
               marginRight: 'auto',
               }}>
             AMANDA YEE
@@ -41,15 +46,18 @@ export default function NavBar() {
 
           <Typography
           sx={{ 
-              borderTop: '1px solid #333333',
-              borderRight: '1px solid #333333',
-              borderBottom: '1px solid #FFFFFF',
-              borderLeft: '1px solid #FFFFFF',
-              boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.1)',
-              padding: '5px 10px',
+              ...boxStyle
               }}>
             {timeNow}
           </Typography>
+        
+          {/* <Typography
+          sx={{ 
+              ...boxStyle
+              }}>
+            <EmailIcon />
+          </Typography> */}
+
         </Toolbar>
 
       </AppBar>
