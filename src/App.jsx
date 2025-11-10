@@ -1,4 +1,4 @@
-import Home from '../components/Home'
+import Home from './components/Home'
 import './App.css'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
