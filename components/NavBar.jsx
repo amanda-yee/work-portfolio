@@ -33,10 +33,8 @@ export default function NavBar() {
             minHeight: 0
           }
         }}
-        
         >
           <Typography 
-            // variant="h8" component="div" 
             sx={{ 
               ...boxStyle,
               marginRight: 'auto',
@@ -50,16 +48,8 @@ export default function NavBar() {
               }}>
             {timeNow}
           </Typography>
-        
-          {/* <Typography
-          sx={{ 
-              ...boxStyle
-              }}>
-            <EmailIcon />
-          </Typography> */}
 
         </Toolbar>
-
       </AppBar>
     </Box>
   );

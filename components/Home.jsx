@@ -23,7 +23,7 @@ const Home = () => {
                     <PopUp name={"about"}/>
                 </div>
                 <div style={{ position: 'absolute', top: '70%', left: '30%' }}>
-                    <PopUp name={"film"}/>
+                    <PopUp name={"film_photos"}/>
                 </div>
                 <div style={{ position: 'absolute', top: '20%', left: '70%' }}>
                     <PopUp name={"project_health_tracker"}/>

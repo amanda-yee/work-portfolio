@@ -12,7 +12,7 @@ const ProjectInsideEdit = () => {
                 HTML, CSS, Javascript, Responsive Design
             </Typography>
 
-            <video width="100%" autoPlay muted>
+            <video width="100%" autoPlay loop muted>
                 <source src={videoSrc} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
