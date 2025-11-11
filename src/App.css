@@ -128,7 +128,12 @@
   }
 
   .proj-interior-folder {
-    top: 80%;
+    top: 65%;
+  }
+
+  .film-folder {
+    top: 75%;
+    left: 20%;
   }
 
   .modal-style {

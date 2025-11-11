@@ -18,9 +18,6 @@ const fontLoop = () => {
             }
         }, 150); 
     };
-
-    console.log('clicked')
-
 }
 
 export default fontLoop;
