@@ -1,10 +1,16 @@
 // import Grid from '@mui/material/Grid';
+import { useEffect } from 'react';
 import PopUp from './PopUp';
 import NavBar from './NavBar';
-
+import fontLoop from '../utils/fontLoop';
 
 const Home = () => {
     
+    useEffect(() => {
+        console.log('home page')
+        fontLoop();
+    }, [])
+
     return (
         <div className="home">
             

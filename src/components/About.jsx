@@ -13,18 +13,18 @@ const About = () => {
             I'm passionate about designing and building intuitive, user friendly interfaces that blend creativity and functionality. <br></br><br></br>
 
             Currently, I am gaining experience through volunteer work. I am seeking full-time opportunities where I can contribute to meaningful projects. <br></br><br></br>
-            
-            <div>
-              <Typography className="modal-text">Contact me here: </Typography>
+            </Typography>
 
-              <div className='social-icons'>
-                <a href="mailto:amandakyee@gmail.com"><EmailIcon /></a>
-                <a href="https://www.linkedin.com/in/amanda-yee/"><LinkedInIcon /></a>
-                <a href="https://github.com/amanda-yee"><GitHubIcon /></a>
-              </div>
+            <Typography className="modal-text">
+              Contact me here: 
+            </Typography>
+
+            <div className='social-icons'>
+              <a href="mailto:amandakyee@gmail.com"><EmailIcon /></a>
+              <a href="https://www.linkedin.com/in/amanda-yee/"><LinkedInIcon /></a>
+              <a href="https://github.com/amanda-yee"><GitHubIcon /></a>
             </div>
-          </Typography>
-
+          
         </>
     )
 }

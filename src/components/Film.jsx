@@ -19,11 +19,14 @@ const Film = () => {
 
     const photos = filmArray.map((film, index) => {
 
-        return <div className="film-photo">
+        return <div className="film-photo" key={index}>
             <img src={film.src} alt="film" width="80%"/> 
-            <Typography className="modal-text">{film.caption}</Typography>
+            
+            <Typography className="modal-text">
+                {film.caption}
+            </Typography>
             </div>
-        
+    
     })
 
     return (

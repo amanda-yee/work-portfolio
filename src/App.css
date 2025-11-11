@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Silkscreen:wght@400;700&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Nova+Square&family=Orbitron:wght@400..900&family=WDXL+Lubrifont+SC&family=Zen+Dots&display=swap');
 
 #root {
   /* max-width: 1280px; */
@@ -25,12 +25,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1
 }
 
 .intro-text {
   font-size: 1.5rem;
-  z-index: 10;
 }
 
 .intro-text h1 {
@@ -120,7 +125,6 @@
 @media (max-width: 800px) {
   .intro-text {
     font-size: 1rem;
-    z-index: 10;
   }
 
   .proj-interior-folder {

@@ -3,9 +3,9 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import playLoop from '../utils/playLoop';
+import fontLoop from '../utils/fontLoop';
 
-export default function NavBar() {
+const NavBar = () => {
 
   const dateNow = new Date();
   const timeNow = dateNow.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', hour12: false}); 
@@ -21,7 +21,7 @@ export default function NavBar() {
   }
 
   return (
-    <Box sx={{ position: 'fixed', top: 0, width: '100%', zIndex: 1 }}>
+    <Box className="nav-bar">
       <AppBar 
         position="static" 
         sx={{
@@ -37,7 +37,7 @@ export default function NavBar() {
           }
         }}
         >
-          <Button sx={{ ...boxStyle, marginRight: 'auto'}}>
+          <Button sx={{ ...boxStyle, marginRight: 'auto' }} onClick={fontLoop}>
             AMANDA YEE
           </Button>
 
@@ -54,3 +54,5 @@ export default function NavBar() {
     </Box>
   );
 }
+
+export default NavBar
