@@ -2,9 +2,10 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import EmailIcon from '@mui/icons-material/Email';
+import Button from '@mui/material/Button';
+import fontLoop from '../utils/fontLoop';
 
-export default function NavBar() {
+const NavBar = () => {
 
   const dateNow = new Date();
   const timeNow = dateNow.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', hour12: false}); 
@@ -14,11 +15,13 @@ export default function NavBar() {
     borderLeft: '1px solid #FFFFFF',
     borderBottom: '1px solid #333333',
     borderRight: '1px solid #333333',
+    color: '#000000',
     padding: '2px 8px',
+    borderRadius: 0,
   }
 
   return (
-    <Box sx={{ position: 'fixed', top: 0, width: '100%', zIndex: 1 }}>
+    <Box className="nav-bar">
       <AppBar 
         position="static" 
         sx={{
@@ -34,31 +37,22 @@ export default function NavBar() {
           }
         }}
         >
-          <Typography 
-            sx={{ 
-              ...boxStyle,
-              marginRight: 'auto',
-              }}>
+          <Button sx={{ ...boxStyle, marginRight: 'auto' }} onClick={fontLoop}>
             AMANDA YEE
-          </Typography>
+          </Button>
 
-          <Typography 
-            sx={{ 
-              ...boxStyle,
-              marginRight: 'auto',
-              }}>
+          <Typography sx={{ ...boxStyle, marginRight: 'auto' }}>
             FYI - WEBSITE IS WIP
           </Typography>
 
-          <Typography
-          sx={{ 
-              ...boxStyle
-              }}>
+          <Button sx={{ ...boxStyle }}>
             {timeNow}
-          </Typography>
+          </Button>
 
         </Toolbar>
       </AppBar>
     </Box>
   );
 }
+
+export default NavBar

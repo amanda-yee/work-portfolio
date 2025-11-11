@@ -1,10 +1,16 @@
 // import Grid from '@mui/material/Grid';
+import { useEffect } from 'react';
 import PopUp from './PopUp';
 import NavBar from './NavBar';
-
+import fontLoop from '../utils/fontLoop';
 
 const Home = () => {
     
+    useEffect(() => {
+        console.log('home page')
+        fontLoop();
+    }, [])
+
     return (
         <div className="home">
             
@@ -19,16 +25,16 @@ const Home = () => {
                     </p>
                 </div>
                 
-                <div style={{ position: 'absolute', top: '10%', left: '10%' }}>
+                <div className="about-folder">
                     <PopUp name={"about"}/>
                 </div>
-                <div style={{ position: 'absolute', top: '70%', left: '30%' }}>
+                <div className="film-folder">
                     <PopUp name={"film_photos"}/>
                 </div>
-                <div style={{ position: 'absolute', top: '20%', left: '70%' }}>
+                <div className="proj-health-folder">
                     <PopUp name={"project_health_tracker"}/>
                 </div>
-                <div style={{ position: 'absolute', top: '50%', right: '10%' }}>
+                <div className="proj-interior-folder">
                     <PopUp name={"project_interior_design"}/>
                 </div>
                    

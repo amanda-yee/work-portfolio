@@ -7,24 +7,24 @@ const About = () => {
 
     return (
         <>
-          {/* <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
-          </Typography> */}
-          <Typography id="modal-modal-description">
-            Hi! I'm a Software Engineer based in Brooklyn, with a background in data science. <br></br>
-            I am currently gaining experience through volunteer work and am open to full-time opportunities. <br></br><br></br>
+          <Typography className="modal-text">
+            Hi! I'm Amanda. A software engineer based in Brooklyn NY, with a background in data science. <br></br><br></br>
             
-            <div>
-              <Typography>Contact me: </Typography>
+            I'm passionate about designing and building intuitive, user friendly interfaces that blend creativity and functionality. <br></br><br></br>
 
-              <div className='social-icons'>
-                <a href="mailto:amandakyee@gmail.com"><EmailIcon /></a>
-                <a href="https://www.linkedin.com/in/amanda-yee/"><LinkedInIcon /></a>
-                <a href="https://github.com/amanda-yee"><GitHubIcon /></a>
-              </div>
+            Currently, I am gaining experience through volunteer work. I am seeking full-time opportunities where I can contribute to meaningful projects. <br></br><br></br>
+            </Typography>
+
+            <Typography className="modal-text">
+              Contact me here: 
+            </Typography>
+
+            <div className='social-icons'>
+              <a href="mailto:amandakyee@gmail.com"><EmailIcon /></a>
+              <a href="https://www.linkedin.com/in/amanda-yee/"><LinkedInIcon /></a>
+              <a href="https://github.com/amanda-yee"><GitHubIcon /></a>
             </div>
-          </Typography>
-
+          
         </>
     )
 }
