@@ -12,23 +12,6 @@ import Film from './Film';
 import imageSrc from '../assets/folder.png';
 
 
-// const style = {
-//   //positioning modal in center of screen
-//   position: 'absolute',
-//   top: '50%',
-//   left: '50%',
-//   transform: 'translate(-50%, -50%)',
-//   minWidth: '100vw',
-//   width: '50%',
-//   maxHeight: '70vh',
-//   overflowY: 'auto', // add scrollbar if content exceeds maxHeight
-//   color: '#000000',
-//   bgcolor: 'background.paper',
-//   border: '2px solid #000000',
-//   // boxShadow: 24,
-//   pb: '1rem'
-// };
-
 const boxStyle = {
     borderTop: '1px solid #FFFFFF',
     borderLeft: '1px solid #FFFFFF',
