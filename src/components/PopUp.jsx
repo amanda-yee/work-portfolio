@@ -12,28 +12,32 @@ import Film from './Film';
 import imageSrc from '../assets/folder.png';
 
 
-const style = {
-  //positioning modal in center of screen
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: '50%',
-  maxHeight: '70vh',
-  overflowY: 'auto', // add scrollbar if content exceeds maxHeight
-  color: '#000000',
-  bgcolor: 'background.paper',
-  border: '2px solid #000000',
-  // boxShadow: 24,
-  pb: '1rem'
-};
+// const style = {
+//   //positioning modal in center of screen
+//   position: 'absolute',
+//   top: '50%',
+//   left: '50%',
+//   transform: 'translate(-50%, -50%)',
+//   minWidth: '100vw',
+//   width: '50%',
+//   maxHeight: '70vh',
+//   overflowY: 'auto', // add scrollbar if content exceeds maxHeight
+//   color: '#000000',
+//   bgcolor: 'background.paper',
+//   border: '2px solid #000000',
+//   // boxShadow: 24,
+//   pb: '1rem'
+// };
 
 const boxStyle = {
     borderTop: '1px solid #FFFFFF',
     borderLeft: '1px solid #FFFFFF',
     borderBottom: '1px solid #333333',
     borderRight: '1px solid #333333',
-    padding: '2px 8px',
+    color: '#000000',
+    padding: '2px 2px',
+    minWidth: 0, 
+    borderRadius: 0,
 }
 
 export default function PopUp(props) {
@@ -51,7 +55,7 @@ export default function PopUp(props) {
         />
       </Typography>
 
-      <p>{props.name}</p>
+      <div>{props.name}</div>
 
       <Modal
         open={open} // this determines whether modal is open or closed
@@ -60,9 +64,16 @@ export default function PopUp(props) {
         aria-describedby="modal-modal-description"
       >
 
-        <Box sx={style}>
+        <Box className="modal-style">
+
+          {/* top bar of popup window */}
           <Box className="window-bar" onClick={handleClose}>
-            <CloseIcon sx={boxStyle} className='close'/>
+            <Typography sx={{ marginRight: 'auto', marginLeft: '20px' }}>
+              {props.name}
+            </Typography>
+            <Button sx={{ ...boxStyle }} className="btn-close">
+              <CloseIcon />
+            </Button>
           </Box>
 
           {/* render content in popup based on name */}

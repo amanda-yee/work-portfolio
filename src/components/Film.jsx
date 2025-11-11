@@ -21,7 +21,7 @@ const Film = () => {
 
         return <div className="film-photo">
             <img src={film.src} alt="film" width="80%"/> 
-            <Typography>{film.caption}</Typography>
+            <Typography className="modal-text">{film.caption}</Typography>
             </div>
         
     })

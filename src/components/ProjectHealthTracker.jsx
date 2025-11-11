@@ -5,7 +5,7 @@ const ProjectHealthTracker = () => {
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-            <Typography>
+            <Typography className="modal-text">
                 React, Express, Node, MongoDB, JWT User Authentication
             </Typography>
 
