@@ -28,6 +28,14 @@ const style = {
   pb: '1rem'
 };
 
+const boxStyle = {
+    borderTop: '1px solid #FFFFFF',
+    borderLeft: '1px solid #FFFFFF',
+    borderBottom: '1px solid #333333',
+    borderRight: '1px solid #333333',
+    padding: '2px 8px',
+}
+
 export default function PopUp(props) {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
@@ -54,7 +62,7 @@ export default function PopUp(props) {
 
         <Box sx={style}>
           <Box className="window-bar" onClick={handleClose}>
-            <CloseIcon className='close'/>
+            <CloseIcon sx={boxStyle} className='close'/>
           </Box>
 
           {/* render content in popup based on name */}

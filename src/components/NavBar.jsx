@@ -10,10 +10,10 @@ export default function NavBar() {
   const timeNow = dateNow.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', hour12: false}); 
 
   const boxStyle = {
-    borderTop: '1px solid #333333',
-    borderRight: '1px solid #333333',
-    borderBottom: '1px solid #FFFFFF',
+    borderTop: '1px solid #FFFFFF',
     borderLeft: '1px solid #FFFFFF',
+    borderBottom: '1px solid #333333',
+    borderRight: '1px solid #333333',
     padding: '2px 8px',
   }
 
@@ -28,7 +28,7 @@ export default function NavBar() {
 
         <Toolbar disableGutters
         sx={{
-          padding: '5px',
+          padding: '3px',
           '&.MuiToolbar-root': {
             minHeight: 0
           }
@@ -40,6 +40,14 @@ export default function NavBar() {
               marginRight: 'auto',
               }}>
             AMANDA YEE
+          </Typography>
+
+          <Typography 
+            sx={{ 
+              ...boxStyle,
+              marginRight: 'auto',
+              }}>
+            FYI - WEBSITE IS WIP
           </Typography>
 
           <Typography

@@ -6,10 +6,10 @@ const ProjectInsideEdit = () => {
     return (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
             <Typography>
-                Bespoke portfolio website for an Interior Design business 
+                Bespoke portfolio for a New York based Interior Design business 
             </Typography>
             <Typography>
-                HTML, CSS, Javascript, Responsive Design
+                HTML, CSS, Javascript, Responsive Design, Figma
             </Typography>
 
             <video width="100%" autoPlay loop muted>
