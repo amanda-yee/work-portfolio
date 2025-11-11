@@ -1,4 +1,3 @@
-// import Grid from '@mui/material/Grid';
 import { useEffect } from 'react';
 import PopUp from './PopUp';
 import NavBar from './NavBar';
@@ -6,8 +5,8 @@ import fontLoop from '../utils/fontLoop';
 
 const Home = () => {
     
+    // run font loop when Home page mounts 
     useEffect(() => {
-        console.log('home page')
         fontLoop();
     }, [])
 

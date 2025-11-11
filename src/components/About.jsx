@@ -21,8 +21,8 @@ const About = () => {
 
             <div className='social-icons'>
               <a href="mailto:amandakyee@gmail.com"><EmailIcon /></a>
-              <a href="https://www.linkedin.com/in/amanda-yee/"><LinkedInIcon /></a>
-              <a href="https://github.com/amanda-yee"><GitHubIcon /></a>
+              <a href="https://www.linkedin.com/in/amanda-yee/" target="_blank"><LinkedInIcon /></a>
+              <a href="https://github.com/amanda-yee" target="_blank"><GitHubIcon /></a>
             </div>
           
         </>

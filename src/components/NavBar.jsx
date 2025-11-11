@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 import fontLoop from '../utils/fontLoop';
 
 const NavBar = () => {
-
+  
   const dateNow = new Date();
   const timeNow = dateNow.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', hour12: false}); 
 
@@ -45,7 +45,7 @@ const NavBar = () => {
             FYI - WEBSITE IS WIP
           </Typography>
 
-          <Button sx={{ ...boxStyle }}>
+          <Button sx={{ ...boxStyle }} className='clock'>
             {timeNow}
           </Button>
 
