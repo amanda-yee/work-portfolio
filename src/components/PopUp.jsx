@@ -35,6 +35,7 @@ export default function PopUp(props) {
         src={imageSrc}
         alt="Folder icon"
         width="50"
+        priority
         />
       </Typography>
 
