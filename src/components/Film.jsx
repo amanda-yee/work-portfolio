@@ -12,9 +12,9 @@ const Film = () => {
         {src: corner, caption: "SoHo, Manhattan"},
         {src: kl, caption: "Kuala Lumpur, Malaysia"},
         {src: tulum, caption: "Tulum, Mexico"},
-        {src: hewes, caption: "Hewes Station, Brooklyn"},
         {src: moma, caption: "Moma Museum, New York"},
-        {src: mott, caption: "Chinatown, Manhattan"}
+        {src: mott, caption: "Chinatown, Manhattan"},
+        {src: hewes, caption: "Williamsburg, Brooklyn"}
     ];
 
     const photos = filmArray.map((film, index) => {
