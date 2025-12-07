@@ -6,7 +6,10 @@ const ProjectInsideEdit = () => {
     return (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
             <Typography className="modal-text">
-                Bespoke portfolio for a New York based Interior Design business. <br></br><br></br>
+                Bespoke portfolio for a New York based Interior Design business. <br></br>
+                <a href="https://www.insideedit.com/" target="_blank">Link to website</a>
+                
+                <br></br><br></br>
            
                 HTML, CSS, Javascript, Responsive Design, Figma
             </Typography>
