@@ -1,7 +1,6 @@
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-// import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import fontLoop from '../utils/fontLoop';
 
@@ -27,7 +26,7 @@ const NavBar = () => {
     borderBottom: '1px solid #333333',
     borderRight: '1px solid #333333',
     color: '#000000',
-    padding: '0px 8px',
+    padding: '0px 4px',
     minWidth: 0,
     marginLeft: '4px',
     borderRadius: 0,
@@ -59,7 +58,7 @@ const NavBar = () => {
             {timeNow}
           </Button>
           <Button sx={{ ...boxStyleX }}>
-            X
+            &#9734;
           </Button>
 
         </Toolbar>
