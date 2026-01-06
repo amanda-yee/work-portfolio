@@ -57,7 +57,7 @@ const NavBar = () => {
           <Button sx={{ ...boxStyle }}>
             {timeNow}
           </Button>
-          <Button sx={{ ...boxStyleX }}>
+          <Button sx={{ ...boxStyleX }} onClick={fontLoop}>
             &#9734;
           </Button>
 
